@@ -43,8 +43,6 @@ def login(name, password):
         registerDateLogin(name, now)
         temp = result
         temp.append(value)
-
-
     return temp
 
 

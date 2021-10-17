@@ -1,0 +1,22 @@
+import requests
+
+
+def offerview(user, offer, taking):
+    isvalid = _offer(user, offer, taking)
+    if isvalid:
+        print('A troca foi anunciada')
+        return isvalid
+    else:
+        print('Lamentamos, mas não alguma coisa não está correta (quantidade insuficente ou ID incorreto)')
+        return None
+
+
+def _offer(user, offer, taking):
+    r = requests.post(
+        'http://localhost:5000/trade/create',
+        data={'idUser': user['idUser'], 'offer': offer, 'taking': taking}
+    )
+    response = r.json()
+    isvalid = response['response']
+
+    return isvalid
