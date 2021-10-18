@@ -14,7 +14,7 @@ def albumview(user):
             print('\nParabéns você completou o album e ganhou uma figurinha ESPECIAL exclusiva:\n')
             print("ID | NOME | RARIDADE")
             print(special['idFigure'], '|', special['name'], '|', special['rarity'])
-        print()
+        return figures
 
     else:
         print('Lamentamos, mas não foi possível encontrar o álbum')
