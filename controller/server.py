@@ -181,7 +181,6 @@ def sell():
     idUser = request.form.get('idUser')
     idFigure = request.form.get('idFigure')
     database = figure.sell(idUser, idFigure)
-    print(database)
     if database:
         name = database['name']
         price = float(database['price'])

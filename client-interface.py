@@ -6,7 +6,6 @@ import view.figura as fg
 import view.offer as of
 import view.listar as va
 import view.trade as vt
-import controller.client as clt
 
 
 class Interface:
