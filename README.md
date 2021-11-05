@@ -28,8 +28,8 @@ O sistema foi desenvolvido em um único projeto, juntando o cliente e o servidor
 Para obter uma cópia deste projeto:
 
 ```shell
-git clone https://github.com/adrianomqsmts/OneFigure-REST
-cd exemplo
+git clone https://github.com/adrianomqsmts/OneFigure-Flask
+cd OneFigure-Flask
 ```
 
 Para iniciar o servidor:
